@@ -5,6 +5,8 @@ if (module.hot) {
 
 document.addEventListener("click", function () {
     let newDiv = document.createElement("div");
-    newDiv.className = "cyan";
+    let color = "cyan";
+    newDiv.className = color;
+    console.log(color)
     document.body.appendChild(newDiv);
 });

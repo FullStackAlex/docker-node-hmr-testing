@@ -3,6 +3,7 @@ services:
   node:
     image: node:15.14.0-buster
     container_name: testing_hmr
+    command: tail -f /dev/null
     working_dir: /home/node/app
     environment:
         - NODE_ENV=dev
