@@ -1,0 +1,15 @@
+{
+  "name": "single_node",
+  "scripts": {
+    "start": "NODE_ENV=dev webpack serve  --config webpack-main.js --progress --profile"
+  },
+  "devDependencies": {
+    "webpack": "^5.35.1"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "*",
+    "express-static": "^1.2.6",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

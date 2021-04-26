@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  node:
+    image: node:15.14.0-buster
+    container_name: testing_hmr
+    working_dir: /home/node/app
+    environment:
+        - NODE_ENV=dev
+    ports:
+      - "9000:8080"
+    volumes:
+      - ./app:/home/node/app
